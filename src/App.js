@@ -4,6 +4,10 @@ import Poster from "./components/Poster";
 import Offers from "./components/Offers";
 import Specialists from "./components/Specialists";
 import Appointment from "./components/Appointment";
+import Articles from "./components/Articles";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Slider from "./components/Carousel";
 
 function App() {
   return (
@@ -14,6 +18,10 @@ function App() {
       <Offers />
       <Specialists />
       <Appointment />
+      <Articles />
+      <Slider />
+      <Contact />
+      <Footer />
     </>
   );
 }

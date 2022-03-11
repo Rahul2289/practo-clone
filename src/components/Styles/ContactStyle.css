@@ -1,0 +1,133 @@
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  margin: 3% 5%;
+  width: 85%;
+  justify-content: space-around;
+  padding: 2rem;
+}
+.contact-img-container {
+  width: 30%;
+}
+.contact-info-container {
+  width: 50%;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+.contact-img-container img {
+  width: 100%;
+  height: 100%;
+}
+.contact-info-container h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.contact-info-container p {
+  font-size: small;
+  margin-bottom: 2rem;
+}
+.contact-info-container h6 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.button-1 {
+  color: rgb(20, 18, 18);
+  border: 1px solid black;
+  margin-left: 0.5rem;
+  height: 2rem;
+  width: 5rem;
+  background-color: aqua;
+}
+.contact-info-container form {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+.contact-info-container form div {
+  border: 1px solid rgb(99, 98, 98);
+  background-color: white;
+}
+.contact-info-container input {
+  height: 100%;
+  outline: none;
+  border: none;
+  border-left: 1px solid black;
+  padding-left: 0.4rem;
+  margin-left: 0.5rem;
+}
+.contact-btn-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.contact-btn-container div {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  background-color: black;
+  margin-right: 1rem;
+}
+.contact-btn-container button {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0 0.5rem;
+}
+.icon {
+  padding: 0 0.5rem;
+  color: white;
+}
+@media screen and (max-width: 700px) {
+  .contact-img-container {
+    display: none;
+  }
+  .contact-info-container {
+    width: 80%;
+  }
+  .contact-container {
+    margin: 0;
+  }
+  .contact-info-container form div {
+    width: 70%;
+    padding: 0;
+    height: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .contact-info-container form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+  }
+  .contact-info-container input {
+    height: 100%;
+    padding: 0;
+    margin-right: 2px;
+  }
+  .button-1 {
+    font-size: 0.7rem;
+    padding: 0;
+    height: 1.5rem;
+  }
+  .contact-info-container h3 {
+    font-size: 1.6rem;
+  }
+  .contact-info-container h6 {
+    font-size: 11px;
+  }
+  .contact-btn-container div {
+    margin: 1px;
+  }
+  .contact-btn-container div button {
+    font-size: 10px;
+    padding-left: 2px;
+  }
+}
