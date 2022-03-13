@@ -1,0 +1,41 @@
+.descrip-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.descrip-container h3 {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.descrip-container .imge-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2rem;
+}
+.imge-container img {
+  width: 100px;
+  border-radius: 10%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.descrip-container p {
+  margin-left: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+  margin-bottom: 1.5rem;
+}
+.desc-posters-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.desc-posters-container img {
+  width: 50%;
+}
+.desc-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}

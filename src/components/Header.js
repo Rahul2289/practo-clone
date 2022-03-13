@@ -11,6 +11,7 @@ import {
   useTheme,
 } from "@mui/material";
 import DrawerComp from "./DrawerComp";
+import { Link } from "react-router-dom";
 const pages = [
   "Find Doctors",
   "Video Consult",
@@ -31,15 +32,22 @@ const Header = () => {
           {isMatch ? (
             <>
               <DrawerComp />
-              <Typography>Practo</Typography>
-
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <Typography sx={{ fontSize: "1.4rem" }} className="practo-logo">
+                  Practo
+                </Typography>
+              </Link>
               <Button sx={{ marginLeft: "auto" }} variant="contained">
                 Signup
               </Button>
             </>
           ) : (
             <>
-              <Typography className="Procto">Practo</Typography>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <Typography sx={{ fontSize: "1.4rem" }} className="practo-logo">
+                  Practo
+                </Typography>
+              </Link>
               <Tabs
                 textColor="inherit"
                 value={value}

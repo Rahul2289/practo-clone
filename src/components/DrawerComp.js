@@ -6,8 +6,10 @@ import {
   ListItemIcon,
   ListItemText,
   IconButton,
+  Typography,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import { Link } from "react-router-dom";
 const pages = [
   "Find Doctors",
   "Video Consult",
@@ -20,12 +22,18 @@ const DrawerComp = () => {
   return (
     <>
       <Drawer
+        sx={{ width: "500px" }}
         open={openDrawer}
         onClose={() => {
           setOpenDrawer(false);
         }}
       >
-        <List>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <Typography sx={{ margin: "1rem auto" }} className="practo-logo">
+            practo
+          </Typography>
+        </Link>
+        <List sx={{ width: "15rem" }}>
           {pages.map((page, i) => {
             return (
               <ListItemButton
